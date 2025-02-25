@@ -1,0 +1,46 @@
+class GuessTheNumber extends Game {
+
+    // The constructor calls the parent class constructor and sets up the game.
+    public GuessTheNumber() {
+        super(); // It calls the constructor of the Game class
+    }
+
+    // The start method begins the game and handles user interaction.
+    @Override
+    public void start() {
+        boolean playAgain;
+
+        // The game runs in a loop until the user decides to stop playing.
+        do {
+            // It generates a random number between 1 and 50.
+            targetNumber = random.nextInt(50) + 1;
+            attempts = 0; // It resets the attempt counter
+            System.out.println("\nWelcome to Guess the Number!");
+            System.out.println("Try to guess the number between 1 and 50.");
+
+            // The game loop continues until the correct number is guessed.
+            while (true) {
+                System.out.print("Enter your guess: ");
+                int guess = scanner.nextInt(); // It reads the user's guess
+                attempts++; // It increments the attempt counter
+
+                // It checks whether the guess is correct, too high, or too low.
+                if (guess == targetNumber) {
+                    System.out.println("Congratulations! You've guessed the number in " + attempts + " attempts.");
+                    break; // It exits the loop if the guess is correct
+                } else if (guess < targetNumber) {
+                    System.out.println("Too low! Try again.");
+                } else {
+                    System.out.println("Too high! Try again.");
+                }
+            }
+
+            // The program asks if the user wants to play again.
+            System.out.print("Do you want to play again? (yes/no): ");
+            playAgain = scanner.next().equalsIgnoreCase("yes");
+
+        } while (playAgain); // It repeats the game if the user says "yes"
+
+        System.out.println("Thanks for playing! Goodbye.");
+    }
+}
