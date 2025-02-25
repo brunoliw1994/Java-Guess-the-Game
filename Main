@@ -1,0 +1,9 @@
+// The Main class serves as the entry point of the program.
+public class Main {
+    // The main method executes the game.
+    public static void main(String[] args) {
+        // It creates a new GuessTheNumber game instance and starts it.
+        GuessTheNumber game = new GuessTheNumber();
+        game.start(); 
+    }
+}
