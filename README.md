@@ -6,7 +6,7 @@ In this game, the computer generates a random number between 1 and 50, and the p
 
 The primary goal of this project is to **demonstrate** the usage of the `extends` and `abstract` keywords in Java, highlighting concepts like **encapsulation** and **abstraction** through an engaging, interactive experience.
 
-[Guess the Number Game presentation]()
+[Guess the Number Game presentation](https://www.youtube.com/watch?v=_ZPHv_sUvyc)
 
 # Development Environment:
 Programming Language: Java 17
