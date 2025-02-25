@@ -1,0 +1,18 @@
+import java.util.Random;
+import java.util.Scanner;
+
+// The abstract Game class defines the common structure for any game.
+abstract class Game {
+    protected int targetNumber; // Stores the randomly generated number
+    protected int attempts; // Stores the number of attempts made
+    protected Random random; // Used for generating random numbers
+    protected Scanner scanner; // Scanner for user input
+
+    // The constructor initializes the Random object and Scanner.
+    public Game() {
+        random = new Random(); // It initializes the random number generator
+        scanner = new Scanner(System.in); // It initializes the scanner for user input
+    }
+
+    public abstract void start();
+}
