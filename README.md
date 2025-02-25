@@ -2,7 +2,7 @@
 
 This Java-based "Guess the Number" game is designed to illustrate key object-oriented programming principles such as inheritance and abstraction while also practicing user input and output handling.
 
-In this game, the computer generates a random number between 1 and 100, and the player must guess it within a fixed number of attempts.
+In this game, the computer generates a random number between 1 and 50, and the player must guess it within a fixed number of attempts.
 
 The primary goal of this project is to **demonstrate** the usage of the `extends` and `abstract` keywords in Java, highlighting concepts like **encapsulation** and **abstraction** through an engaging, interactive experience.
 
